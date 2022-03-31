@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  skip_forgery_protection
+
   before_action :require_login
 
   helper_method :current_user
